@@ -52,4 +52,24 @@ footer {
   
 }
 
+p {
+  font-size: 1.1em;
+}
+
+a {
+  color: #4169E1;
+  text-decoration: none;
+}
+
+img {
+  border: 5px solid #CC00CC;
+  border-radius: 10px;
+
+}
+
+main a[href^="malito:"] {
+  color: #000000;
+  font-weight: bold;
+}
+
   
