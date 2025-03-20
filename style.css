@@ -71,8 +71,10 @@ main a[href^="malito:"] {
   color: #000000;
   font-weight: bold;
 }
+
 button {
   background-color: #00FFFF;
+}
   
 
   
