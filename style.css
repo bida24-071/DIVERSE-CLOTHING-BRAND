@@ -1,4 +1,4 @@
-
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   color: #333;
@@ -50,20 +50,13 @@ main img {
   display: block;
   margin: 20px 0;
 }
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.5s ease;
-}
 
 footer {
   background-color: #CC00CC;
   color: white;
   text-align: center;
   padding: 10px;
-  position: relative; /* Changed from fixed to avoid overlap on small screens */
+  position: relative;
   bottom: 0;
   width: 100%;
 }
@@ -115,6 +108,49 @@ button {
   text-decoration: underline;
 }
 
+/* Carousel Styles */
+#productCarousel {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transform: translateX(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#productCarousel:hover .carousel-control-prev,
+#productCarousel:hover .carousel-control-next {
+  opacity: 1;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
   header h1, header h2 {
     font-size: 1.5rem;
@@ -124,6 +160,15 @@ button {
     display: block;
     margin: 10px 0;
   }
+
+  footer {
+    position: static;
+  }
+
+  .carousel-item img {
+    object-fit: contain;
+  }
+}
 
 
 
