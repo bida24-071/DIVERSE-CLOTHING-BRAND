@@ -120,4 +120,48 @@ button {
   footer {
     position: static;
   }
+#productCarousel {
+  max-width: 100%;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
 }
+
+.carousel-inner {
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+  transform: translateX(0);
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  filter: invert(100%);
+  transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+@media (max-width: 768px) {
+  #productCarousel {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .carousel-item img {
+    object-fit: contain;
+  }
+}
+
