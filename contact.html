@@ -9,7 +9,7 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
- <header class="bg-light py-4 border-bottom">
+  <header class="bg-light py-4 border-bottom">
     <div class="container text-center">
       <h1 class="fw-bold">DIVERSE CLOTHING BRAND</h1>
       <h2 class="text-muted">One World. Infinite Styles</h2>
@@ -26,8 +26,8 @@
             <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
             <li class="nav-item"><a class="nav-link" href="shop.html">SHOP</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">ABOUT US</a></li>
-            <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">CONTACT US</a></li>
-            <li class="nav-item"><a class="nav-link" href="feedback.html">FEEDBACK</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT US</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="feedback.html">FEEDBACK</a></li>
           </ul>
         </div>
       </div>
@@ -35,50 +35,35 @@
   </header>
 
   <main class="container my-5">
-    <h1 class="text-center mb-4">Contact Us</h1>
+    <h1 class="text-center mb-4">Feedback</h1>
 
-    <p>We’d love to hear from you! Whether you have questions about our products, need help with an order, or just want to say hi, our team is here for you.</p>
-
-    <ul class="list-unstyled mb-4">
-      <li>📍 <strong>Our Location:</strong> Botswana, Gaborone</li>
-      <li>📧 <strong>Email Us:</strong> <a href="mailto:weardiverseclothingbrand@gmail.com">weardiverseclothingbrand@gmail.com</a></li>
-      <li>📞 <strong>Call or WhatsApp:</strong> 75798734 | 76358950</li>
-      <li>📲 <strong>Follow & Connect with Us:</strong> 
-        <a href="#" target="_blank" class="text-decoration-none">Instagram</a> | 
-        <a href="#" target="_blank" class="text-decoration-none">Facebook</a>
-      </li>
-      <li>📦 <strong>Customer Support Hours:</strong><br>
-        Monday – Friday: 9 AM – 6 PM (Your Time Zone)<br>
-        Saturday – Sunday: Closed / Limited Support (Optional)
-      </li>
-    </ul>
-
-    <p>Have a question? Fill out the form below, and we’ll get back to you as soon as possible!</p>
-
-    <div class="row justify-content-center">
-      <div class="col-md-6">
-
-        <form>
-          <div class="mb-3">
-            <label for="name" class="form-label">Name</label>
-            <input type="text" class="form-control" id="name" placeholder="Your full name" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="email" class="form-label">Email address</label>
-            <input type="email" class="form-control" id="email" placeholder="name@example.com" required />
-          </div>
-
-          <div class="mb-3">
-            <label for="message" class="form-label">Message</label>
-            <textarea class="form-control" id="message" rows="5" placeholder="Write your message here..." required></textarea>
-          </div>
-
-          <button type="submit" class="btn btn-dark w-100">Send Message</button>
-        </form>
-
+    <form action="action_page.php" method="post" class="mx-auto" style="max-width: 500px;">
+      <div class="mb-3">
+        <label for="firstname" class="form-label">First Name</label>
+        <input type="text" class="form-control" id="firstname" name="firstname" required />
       </div>
-    </div>
+
+      <div class="mb-3">
+        <label for="lastname" class="form-label">Last Name</label>
+        <input type="text" class="form-control" id="lastname" name="lastname" required />
+      </div>
+
+      <label class="form-label d-block mb-2">Gender</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="genderMale" value="male" required />
+        <label class="form-check-label" for="genderMale">Male</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="female" />
+        <label class="form-check-label" for="genderFemale">Female</label>
+      </div>
+      <div class="form-check form-check-inline mb-3">
+        <input class="form-check-input" type="radio" name="gender" id="genderOther" value="other" />
+        <label class="form-check-label" for="genderOther">Other</label>
+      </div>
+
+      <button type="submit" class="btn btn-dark w-100">Submit</button>
+    </form>
   </main>
 
   <footer>
