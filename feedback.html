@@ -33,11 +33,11 @@
       </div>
     </nav>
   </header>
- <main class="container my-4">
+  <main class="container my-4">
     <h2 class="text-center mb-4">Feedback</h2>
     <p class="text-center">We value your feedback! Please fill out the form below to let us know your thoughts, suggestions, or concerns.</p>
 
-    <form action="mailto:weardiverseclothingbrand@gmail.com" method="POST" enctype="text/plain" class="row g-3">
+    <form id="feedbackForm" class="row g-3">
       <div class="col-md-6">
         <label for="firstname" class="form-label">First Name</label>
         <input type="text" class="form-control" id="firstname" name="firstname" required>
@@ -69,7 +69,12 @@
         <button type="submit" class="btn btn-primary">Submit Feedback</button>
       </div>
     </form>
+
+    <div id="thankYouMessage" class="alert alert-success mt-4 text-center d-none" role="alert">
+      Thank you for your feedback!
+    </div>
   </main>
+
 
 <!-- Bootstrap JS and dependencies -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
