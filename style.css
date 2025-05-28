@@ -123,11 +123,6 @@ button {
   width: 100%;
 }
 
-#productCarousel {
-  width: 80%; /* Adjust the width as you want */
-  max-width: 800px; /* Optional max width */
-}
-
   footer {
     position: static;
   }
