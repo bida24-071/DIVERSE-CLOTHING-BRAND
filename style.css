@@ -1,10 +1,11 @@
 body {
-  font-family: Ariel, sans-serif;
+  font-family: Arial, sans-serif;
   color: #333;
   background-color: #FF00FF;
   margin: 0;
   padding: 0;
   line-height: 1.6;
+  font-size: 1.1rem; /* Ensure readable text size */
 }
 
 header {
@@ -19,9 +20,10 @@ header h1 {
 }
 
 nav a {
-  color:white;
+  color: white !important;
   text-decoration: none;
   margin: 0 10px;
+  font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -30,15 +32,16 @@ nav a:hover {
 
 main {
   padding: 20px;
-  max-width: 800px;
+  max-width: 100%;
   margin: 0 auto;
+  font-size: 1.1rem;
 }
 
-main image {
+main img {
   max-width: 100%;
   height: auto;
   display: block;
-  margin:20 0;
+  margin: 20px 0;
 }
 
 footer {
@@ -49,11 +52,10 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  
 }
 
 p {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 a {
@@ -61,13 +63,16 @@ a {
   text-decoration: none;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 img {
   border: 5px solid #CC00CC;
   border-radius: 10px;
-
 }
 
-main a[href^="malito:"] {
+main a[href^="mailto:"] {
   color: #000000;
   font-weight: bold;
 }
@@ -75,9 +80,48 @@ main a[href^="malito:"] {
 button {
   background-color: #33FFFF;
   text-align: left;
-
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
 }
 
+/* Ensure responsive container */
+.container {
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+/* Override Bootstrap navbar link color */
+.navbar .nav-link {
+  color: white !important;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.navbar .nav-link:hover {
+  text-decoration: underline;
+}
+
+.navbar {
+  background-color: #CC00CC !important;
+}
+
+@media (max-width: 768px) {
+  header h1, header h2 {
+    font-size: 1.5rem;
+  }
+
+  nav a {
+    display: block;
+    margin: 10px 0;
+  }
+
+  footer {
+    position: static;
+  }
+}
   
 
   
