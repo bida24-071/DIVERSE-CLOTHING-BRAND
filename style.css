@@ -121,7 +121,14 @@ button {
   footer {
     position: static;
   }
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
 }
+
 
 
 
