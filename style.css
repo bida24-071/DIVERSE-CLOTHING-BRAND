@@ -126,9 +126,7 @@ button {
   height: auto;
   object-fit: cover;
   object-position: center;
-  transition: transform 0.5s ease;
   display: block;
-  margin: 0 auto;
 }
 
 .carousel-item-next,
