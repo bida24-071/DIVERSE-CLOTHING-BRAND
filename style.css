@@ -1,3 +1,4 @@
+
 body {
   font-family: Arial, sans-serif;
   color: #333;
@@ -120,30 +121,7 @@ button {
   footer {
     position: static;
   }
-#productCarousel {
-  max-width: 100%;
-  margin: 0 auto;
-  border-radius: 10px;
-  overflow: hidden;
 }
 
-.carousel-inner {
-  position: relative;
-}
-
-
-.carousel-control-prev,
-.carousel-control-next {
-  visibility: hidden;
-  opacity: 0;
-  filter: invert(100%);
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-#productCarousel:hover .carousel-control-prev,
-#productCarousel:hover .carousel-control-next {
-  visibility: visible;
-  opacity: 1;
-}
 
 
