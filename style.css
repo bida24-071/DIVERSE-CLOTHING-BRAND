@@ -151,6 +151,13 @@ button {
 #productCarousel:hover .carousel-control-next {
   opacity: 1;
 }
+.carousel-item {
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;     /* Centers vertically */
+  height: 100%;            /* Ensure it takes full height */
+}
+
 
 /* Responsive Styles */
 @media (max-width: 768px) {
