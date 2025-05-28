@@ -50,6 +50,13 @@ main img {
   display: block;
   margin: 20px 0;
 }
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
 
 footer {
   background-color: #CC00CC;
@@ -118,16 +125,8 @@ button {
     margin: 10px 0;
   }
 
-  footer {
-    position: static;
-  }
-.carousel-item img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: center;
-  transition: transform 0.5s ease;
-}
+
+
 
 
 
